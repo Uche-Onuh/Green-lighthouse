@@ -2,18 +2,25 @@ import React from "react";
 import Routers from "../../router/Routers";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import Container from "../Container";
 
 const Layout = () => {
   return (
     <div className="w-full h-full bg-[#f0f0f0]">
       <nav>
-        <Navbar />
+        <Container>
+          <Navbar />
+        </Container>
       </nav>
       <div>
-        <Routers />
+        <Container>
+          <Routers />
+        </Container>
       </div>
       <footer>
-        <Footer />
+        <Container>
+          <Footer />
+        </Container>
       </footer>
     </div>
   );

@@ -11,7 +11,7 @@ module.exports = {
         alternate: "#F5EDE0",
       },
       fontFamily: {
-        poppins: ['"DM Sans"', "sans-serif"],
+        sans: ['"DM Sans"', "sans-serif"],
       },
       backgroundImage: {},
     },
