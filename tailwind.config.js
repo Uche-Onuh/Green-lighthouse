@@ -8,12 +8,16 @@ module.exports = {
         primary: "#00443F",
         secondary: "#00FF79",
         tertiary: "#ACD4CB",
-        alternate: "#F5EDE0",
+        alternate: "#FF7900",
+        hover: "#F5EDE0",
       },
       fontFamily: {
         sans: ['"DM Sans"', "sans-serif"],
       },
-      backgroundImage: {},
+      backgroundImage: {
+        herobg: "url('/src/assets/herobg.jpg')",
+        coursebg: "url('/src/assets/bg1.png')",
+      },
     },
     screens: {
       xs: "480px",

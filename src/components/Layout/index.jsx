@@ -13,9 +13,7 @@ const Layout = () => {
         </Container>
       </nav>
       <div>
-        <Container>
           <Routers />
-        </Container>
       </div>
       <footer>
         <Container>
