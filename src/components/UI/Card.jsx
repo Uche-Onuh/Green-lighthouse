@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 
-const card = ({ img, text, title, link }) => {
+const Card = ({ img, text, title, link }) => {
   return (
-    <div className="bg-hover">
+    <div className="bg-hover shadow-lg overflow-hidden">
       <div className="w-full h-[300px]">
-        <img src={img} alt={title} className="w-full h-full object-fill " />
+        <img src={img} alt={title} className="w-full h-full object-cover" />
       </div>
       <div className="px-6 py-10">
         <h2 className="font-bold text-[20px] md:text-[24px] text-primary leading-[28px] md:leading-[32px] mb-3">
@@ -31,4 +31,4 @@ const card = ({ img, text, title, link }) => {
   );
 };
 
-export default card;
+export default Card;

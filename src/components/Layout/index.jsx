@@ -13,9 +13,9 @@ const Layout = () => {
         </Container>
       </nav>
       <div>
-          <Routers />
+        <Routers />
       </div>
-      <footer>
+      <footer className="bg-primary w-full py-20">
         <Container>
           <Footer />
         </Container>

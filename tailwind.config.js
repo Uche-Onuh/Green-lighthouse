@@ -17,6 +17,8 @@ module.exports = {
       backgroundImage: {
         herobg: "url('/src/assets/herobg.jpg')",
         coursebg: "url('/src/assets/bg1.png')",
+        faqbg: "url('/src/assets/bg2.png')",
+        ctobg: "url('/src/assets/bg3.png')",
       },
     },
     screens: {
