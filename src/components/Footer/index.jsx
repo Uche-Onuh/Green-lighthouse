@@ -7,31 +7,33 @@ const Footer = () => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-between items-start border-b-2 border-b-hover text-white py-14">
-        <div className="flex flex-col items-start justify-center gap-3 mb-6 md:mb-0">
-          <h2 className="font-bold text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] mb-6 md:mb-10 uppercase">
+      <div className="flex flex-col md:flex-row justify-between items-start border-b-2 border-b-hover text-white py-10 md:py-14 gap-8 md:gap-4">
+        {/* Contact Section */}
+        <div className="flex flex-col items-start justify-center gap-3 mb-6 md:mb-0 w-full md:w-1/2">
+          <h2 className="font-bold text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] mb-4 md:mb-6 uppercase">
             Contact
           </h2>
-          <p className="font-normal text-[16px] md:text-[18px] leading-[22px] md:leading-[24px] mb-2 md:mb-4">
+          <p className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] mb-2">
             333 Southeast 2nd Avenue - Suite 2000 - Miami, FL 33131
           </p>
-          <p className="font-normal text-[16px] md:text-[18px] leading-[22px] md:leading-[24px] mb-2 md:mb-4">
+          <p className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] mb-2">
             Phone: 1-855-498-4400
           </p>
-          <p className="font-normal text-[16px] md:text-[18px] leading-[22px] md:leading-[24px] mb-2 md:mb-4">
+          <p className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] mb-2">
             Email: pd@teachnkidslearn.com
           </p>
-          <p className="font-normal text-[16px] md:text-[18px] leading-[22px] md:leading-[24px] mb-2 md:mb-5">
+          <p className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] mb-4">
             Hours: 8:30 am – 5:30 pm, Monday – Friday (limited support evenings,
-            weekends and holidays)
+            weekends, and holidays)
           </p>
 
-          <div className="flex justify-start items-center gap-8">
+          {/* Social Media Icons */}
+          <div className="flex justify-start items-center gap-6">
             {socials.map((social) => (
-              <div key={social.id} className="text-[40px]">
+              <div key={social.id} className="text-[24px] md:text-[28px]">
                 <Link
                   to={social.to}
-                  aria-label={social.name} // Add aria-label for accessibility
+                  aria-label={social.name}
                   className="text-white hover:text-secondary transition-colors"
                 >
                   <social.icon />
@@ -41,27 +43,31 @@ const Footer = () => {
           </div>
         </div>
 
-        {footerLinks.map((col) => (
-          <div key={col.title} className="mb-6 md:mb-0">
-            <h2 className="font-bold text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] mb-6 md:mb-10 uppercase">
-              {col.title}
-            </h2>
-            <ul>
-              {col.links.map((link) => (
-                <li
-                  key={link.name}
-                  className="font-normal text-[16px] md:text-[18px] leading-[22px] md:leading-[24px] mb-2 md:mb-5 hover:text-secondary transition-colors"
-                >
-                  <Link to={link.to}>{link.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {/* Footer Links */}
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 w-full md:w-1/2">
+          {footerLinks.map((col) => (
+            <div key={col.title} className="w-full">
+              <h2 className="font-bold text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] mb-4 md:mb-6 uppercase">
+                {col.title}
+              </h2>
+              <ul className="space-y-2">
+                {col.links.map((link) => (
+                  <li
+                    key={link.name}
+                    className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] hover:text-secondary transition-colors"
+                  >
+                    <Link to={link.to}>{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="text-white mt-4 flex justify-between items-center text-[14px] md:text-[16px]">
-        <p className="font-normal">
+      {/* Footer Bottom */}
+      <div className="text-white mt-6 md:mt-4 flex flex-col md:flex-row justify-between items-center text-[14px] md:text-[16px] gap-4 md:gap-0">
+        <p className="font-normal text-center md:text-left">
           Copyright © {currentYear} Green Lighthouse. All rights reserved.
         </p>
         <Link
