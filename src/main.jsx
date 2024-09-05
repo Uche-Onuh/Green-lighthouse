@@ -12,10 +12,10 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <ToastContainer
         theme="light"
-        position="bottom"
+        position="bottom-center"
         autoClose={3000}
         closeOnClick
-        pauseOnHover={false}
+        pauseOnHover={true}
       />
       <App />
     </BrowserRouter>
