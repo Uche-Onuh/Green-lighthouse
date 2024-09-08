@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Home, About, Contact } from "../pages";
+import { Home, About, Contact, Courses } from "../pages";
 
 const Routers = () => {
   return (
@@ -8,6 +8,7 @@ const Routers = () => {
       <Route path="/" index element={<Home />} />
       <Route path="/about-us" index element={<About />} />
       <Route path="/contact" index element={<Contact />} />
+      <Route path="/courses" index element={<Courses />} />
     </Routes>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet, Container, Header } from "../../components";
+import { Helmet, Header } from "../../components";
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
 
       <section className="w-full py-5 md:py-20">
         <div className="w-[90%] md:w-[70%] mx-auto py-[50px] px-[20px] md:px-[50px] shadow-2xl my-8 md:my-16">
-          <h2 className="font-bold text-center text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-primary relative w-full md:w-4/5 leading-tight md:leading-snug after:content-[''] after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:w-[10%] after:border-b-4 after:border-alternate mb-8">
+          <h2 className="font-bold text-center mx-auto text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-primary relative w-full md:w-4/5 leading-tight md:leading-snug after:content-[''] after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:w-[10%] after:border-b-4 after:border-alternate mb-8">
             Our Philosophy
           </h2>
 
@@ -47,7 +47,7 @@ const About = () => {
             quaerat.
           </p>
 
-          <h2 className="font-bold text-center text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-primary relative w-full md:w-4/5 leading-tight md:leading-snug after:content-[''] after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:w-[10%] after:border-b-4 after:border-alternate mb-8">
+          <h2 className="font-bold text-center mx-auto text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-primary relative w-full md:w-4/5 leading-tight md:leading-snug after:content-[''] after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:w-[10%] after:border-b-4 after:border-alternate mb-8">
             Our Team
           </h2>
           <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-4 md:mb-6">
@@ -66,7 +66,7 @@ const About = () => {
 
       <section className="w-full py-5 md:py-20">
         <div className="w-[90%] md:w-[70%] mx-auto py-[50px px-[20px] sm:px-[50px] py-[50px] shadow-2xl md:my-16">
-          <h2 className="font-bold text-center text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-primary relative w-full md:w-4/5 leading-tight md:leading-snug after:content-[''] after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:w-[10%] after:border-b-4 after:border-alternate mb-8">
+          <h2 className="font-bold text-center mx-auto text-[18px] sm:text-[24px] md:text-[28px] lg:text-[30px] text-primary relative w-full md:w-4/5 leading-tight md:leading-snug after:content-[''] after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:w-[10%] after:border-b-4 after:border-alternate mb-8">
             Our History
           </h2>
 

@@ -6,6 +6,7 @@ import "tailwindcss/tailwind.css";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ScrolltoTop from "./ScrolltoTop";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")).render(
         closeOnClick
         pauseOnHover={true}
       />
+      <ScrolltoTop />
       <App />
     </BrowserRouter>
   </StrictMode>

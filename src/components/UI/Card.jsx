@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
+import Modal from "./Modal";
 
-const Card = ({ img, text, title, link }) => {
+const Card = ({ img, text, title, link, onSeeMore }) => {
+  const location = useLocation();
+
   return (
     <div className="bg-hover shadow-lg overflow-hidden rounded-md">
       {/* Image Section */}
@@ -20,17 +24,28 @@ const Card = ({ img, text, title, link }) => {
         </p>
 
         {/* Learn More Link */}
-        <div className="flex items-center gap-1">
-          <Link
-            to={link}
-            aria-label="Learn more"
-            className="relative font-bold text-[14px] sm:text-[16px] md:text-[18px] after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:border-b-2 after:border-alternate after:transition-all after:duration-300 hover:after:w-[40%]"
+
+        {location.pathname.includes("/courses") ? (
+          <button
+            className="bg-alternate text-white py-1 px-2 md:py-2 md:px-4 text-[12px] sm:text-[14px] md:text-[16px] hover:bg-hover hover:text-primary uppercase inline-block transition-colors duration-300"
+            onClick={onSeeMore}
           >
-            Learn more
-          </Link>
-          <FaChevronRight aria-hidden="true" />
-        </div>
+            See More
+          </button>
+        ) : (
+          <div className="flex items-center gap-1">
+            <Link
+              to={link}
+              aria-label="Learn more"
+              className="relative font-bold text-[14px] sm:text-[16px] md:text-[18px] after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:border-b-2 after:border-alternate after:transition-all after:duration-300 hover:after:w-[40%]"
+            >
+              Learn more
+            </Link>
+            <FaChevronRight aria-hidden="true" />
+          </div>
+        )}
       </div>
+
     </div>
   );
 };

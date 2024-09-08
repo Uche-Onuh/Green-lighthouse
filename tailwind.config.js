@@ -21,6 +21,7 @@ module.exports = {
         ctobg: "url('/src/assets/bg3.png')",
         aboutbg: "url('/src/assets/aboutbg.jpg')",
         contactbg: "url('/src/assets/contactbg.jpg')",
+        coursesbg: "url('/src/assets/coursesbg.jpg')",
       },
     },
     screens: {
