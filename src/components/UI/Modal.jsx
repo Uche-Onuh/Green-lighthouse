@@ -19,11 +19,22 @@ const Modal = ({ onClose, course }) => {
             className="w-full h-full object-cover"
           />
         </div>
-        <h2 className="text-[24px] md:text-[30px] font-bold mb-4">
+        <h2 className="text-[24px] md:text-[30px] font-bold mb-2">
           {course.title}
         </h2>
+
+        <h3 className="text-[20px] md:text-[25px] font-bold mb-4">
+          {course.subheading}
+        </h3>
         <p className="mb-4">{course.text}</p>
-        <p className="mb-4">{course.extra}</p>
+        <b>Details Overview</b>
+        <p>In this course, students will</p>
+
+        <ul className="list-disc px-8 mb-6">
+          {course.list.map((item, index) => (
+            <li key={item.id}>{item.item}</li>
+          ))}
+        </ul>
         {/* Add more details as needed */}
         <button className="bg-alternate text-white py-1 px-2 md:py-2 md:px-4 text-[12px] sm:text-[14px] md:text-[16px] hover:bg-hover hover:text-primary uppercase inline-block transition-colors duration-300">
           Enroll

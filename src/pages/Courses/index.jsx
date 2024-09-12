@@ -47,7 +47,7 @@ const Courses = () => {
       <Header
         title="Our Courses"
         bgImage="bg-coursesbg"
-        paragraph={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rem ipsa totam dolores! Sit maxime veniam cumque atque excepturi quia ab,`}
+        paragraph={`At Green Lighthouse, we offer several courses aimed at providing kids with essential financial and entrepreneurial skills. Our products target different age groups and learning capacities to ensure that every child can benefit from our interactive and practical lessons`}
       />
 
       <section className="w-full py-10 md:py-32">
@@ -63,23 +63,28 @@ const Courses = () => {
             {/* Content Section */}
             <div className="w-full md:w-1/2">
               <h2 className="font-bold text-[18px] sm:text-[20px] md:text-[24px] leading-[24px] sm:leading-[28px] md:leading-[32px] mb-4 sm:mb-6 md:mb-10">
-                Your custom heading text goes here. Replace this placeholder to
-                align with your content.
+                Our courses are developed by a team of experienced educators and
+                entrepreneurs who understand that kids need hands-on skills and
+                practical experience. We offer a range of interactive lessons,
+                live case studies and interesting activities to provide kids
+                with easy and fun experiences. Our methodology is based on
+                several approaches:
               </h2>
 
               <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-4 md:mb-6">
-                Replace with relevant text content. This could include
-                highlights of the features or benefits.
+                Interactive Learning: Live and engaging lessons to keep kids
+                motivated
               </p>
 
               <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-4 md:mb-6">
-                Add more information or supportive text that enhances your main
-                message.
+                Real-World Applications: practical and easy examples to help
+                kids understand how to apply the financial knowledge to their
+                personal lives
               </p>
 
               <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-6 md:mb-10">
-                Continue to add compelling content that resonates with your
-                audience.
+                Expert Guidance: Lessons taught by experienced professionals who
+                are passionate about financial education.
               </p>
             </div>
           </div>

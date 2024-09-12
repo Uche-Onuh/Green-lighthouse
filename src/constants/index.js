@@ -57,34 +57,57 @@ export const courses = [
     id: "invest",
     img: invest,
     title: "Investing for kids",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            voluptates soluta totam, pariatur id neque accusamus eum praesentium
-            temporibus culpa minima adipisci sed illum dolore quam ut! Amet,
-            dolores praesentium!`,
+    subheading: "Unlock the Secrets of Saving and Investing",
+    text: `Investing for Kids course aims at exposing young learners to the stock market, saving and planning economically. The course covers interactive classes and relatable situations to help kids know how to make a good decision when it comes to money matters.`,
     extra: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, dicta iusto, iure repellendus quaerat quisquam voluptas numquam, sed similique autem dolor voluptate eos! Soluta laudantium reprehenderit maiores, labore dicta, nihil sint beatae iusto obcaecati accusantium, fugit modi nisi incidunt voluptatum non culpa officiis commodi provident! Ad deserunt reiciendis dignissimos aut.`,
+    list: [
+      {
+        id: "item1",
+        item: "How the stock market works.",
+      },
+      { id: "item2", item: "Important Financial terms." },
+      { id: "item3", item: "Types of investment options." },
+      { id: "item4", item: "What time and value is." },
+      { id: "item5", item: "An understanding that business is an investment." },
+    ],
     link: "/courses",
   },
   {
     id: "stock",
     img: stock,
     title: "Stock Market 101",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            voluptates soluta totam, pariatur id neque accusamus eum praesentium
-            temporibus culpa minima adipisci sed illum dolore quam ut! Amet,
-            dolores praesentium!`,
+    subheading: "Master the Market",
+    text: `Stock Market 101 — for older students who are ready to take a deeper dive into investment opportunities. This course goes from the fundamentals of investing in stocks up to professional investment techniques.`,
     extra: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, dicta iusto, iure repellendus quaerat quisquam voluptas numquam, sed similique autem dolor voluptate eos! Soluta laudantium reprehenderit maiores, labore dicta, nihil sint beatae iusto obcaecati accusantium, fugit modi nisi incidunt voluptatum non culpa officiis commodi provident! Ad deserunt reiciendis dignissimos aut.`,
-
+    list: [
+      {
+        id: "item1",
+        item: "Learn about how the economy or stock market works as a whole.",
+      },
+      { id: "item2", item: "Learn how to screen and select stocks." },
+      { id: "item3", item: "Trade the stock account you opened confidently." },
+    ],
     link: "/courses",
   },
   {
     id: "business",
     img: bussiness,
     title: "Business 101",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            voluptates soluta totam, pariatur id neque accusamus eum praesentium
-            temporibus culpa minima adipisci sed illum dolore quam ut! Amet,
-            dolores praesentium!`,
+    subheading: "Start Your Entrepreneurial Journey",
+    text: `Business 101 is where children learn the basics of what it takes to own and operate a business. This course covers everything from learning about credit cards to budgeting.`,
     extra: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, dicta iusto, iure repellendus quaerat quisquam voluptas numquam, sed similique autem dolor voluptate eos! Soluta laudantium reprehenderit maiores, labore dicta, nihil sint beatae iusto obcaecati accusantium, fugit modi nisi incidunt voluptatum non culpa officiis commodi provident! Ad deserunt reiciendis dignissimos aut.`,
+    list: [
+      {
+        id: "item1",
+        item: "Learn the difference between good debt and bad debt.",
+      },
+      {
+        id: "item2",
+        item: "Understand how to use credit and debit cards responsibly",
+      },
+      { id: "item3", item: "Develop budgeting skills." },
+      { id: "item4", item: "Explore the basics of entrepreneurship." },
+    ],
     link: "/courses",
   },
 ];
@@ -92,28 +115,29 @@ export const courses = [
 export const faqs = [
   {
     id: "q1",
-    question: "What services does TanahAir Offer?",
-    reply: "This is a default reply",
+    question: "What age groups are your courses designed for?",
+    reply: `Our courses cater to kids aged 8 years and above, as well as young adults.
+`,
   },
   {
     id: "q2",
-    question: "What services does TanahAir Offer?",
-    reply: "This is a default reply",
+    question: "How are the classes conducted?",
+    reply: "Classes are conducted online in interactive group settings.",
   },
   {
     id: "q3",
-    question: "What services does TanahAir Offer?",
-    reply: "This is a default reply",
+    question: "What topics do your courses cover?",
+    reply: `Our courses cover a wide range of topics including the stock market, saving and investing, financial planning, and entrepreneurship.`,
   },
   {
     id: "q4",
-    question: "What services does TanahAir Offer?",
-    reply: "This is a default reply",
+    question: "Who teaches the courses?",
+    reply: `Our courses are taught by experienced educators and entrepreneurs.`,
   },
   {
     id: "q5",
-    question: "What services does TanahAir Offer?",
-    reply: "This is a default reply",
+    question: "How can I enroll my child in a course?",
+    reply: `You can enroll your child by visiting our course catalog and selecting the desired course.`,
   },
 ];
 
@@ -173,26 +197,20 @@ export const footerLinks = [
 export const testimonial = [
   {
     id: "testimonal1",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et nobis nulla veniam possimus debitis blanditiis cumque dicta voluptates perferendis inventore, ab impedit! Labore sequi dolor consequuntur facere magni libero.`,
+    text: `My teenager now invests in the stock market, thanks to the Stock Market 101 course. It has opened their eyes to the future that awaits them.`,
     course: "Stock Market 101",
     location: "Honolulu, Hawaii",
   },
   {
     id: "testimonal2",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et nobis nulla veniam possimus debitis blanditiis cumque dicta voluptates perferendis inventore, ab impedit! Labore sequi dolor consequuntur facere magni libero.`,
+    text: `Green Lighthouse has totally changed the relationship my child has to money. Not only was the Investing for Kids course informative but my child can now talk about stocks and savings without blinking!`,
     course: "Investing for kids",
     location: "New York City, New York",
   },
   {
     id: "testimonal3",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et nobis nulla veniam possimus debitis blanditiis cumque dicta voluptates perferendis inventore, ab impedit! Labore sequi dolor consequuntur facere magni libero.`,
+    text: `Business 101 has taught my child about some of the basics of entrepreneurship. They want to start their own business at 10! It was fun.`,
     course: "Stock Market 101",
     location: "Boston, Massachusetts",
-  },
-  {
-    id: "testimonal4",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et nobis nulla veniam possimus debitis blanditiis cumque dicta voluptates perferendis inventore, ab impedit! Labore sequi dolor consequuntur facere magni libero.`,
-    course: "Business 101",
-    location: "Seattle, Washington State",
   },
 ];

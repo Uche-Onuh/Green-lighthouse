@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Helmet, Container } from "../../components";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
-import { Card } from "../../components";
-import { courses, faqs } from "../../constants";
+import { faqs } from "../../constants";
+import { courseimg } from "../../assets";
 import { IoChevronDown } from "react-icons/io5";
 
 const Home = () => {
@@ -24,8 +24,7 @@ const Home = () => {
             <div className="w-full md:w-[60%]">
               {/* Heading */}
               <h1 className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[60px] text-white font-bold leading-tight md:leading-[65px] mb-6 md:mb-16">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Pariatur
+                Empowering the Next Generation of Financial Leaders
               </h1>
 
               {/* Button */}
@@ -57,27 +56,22 @@ const Home = () => {
             {/* Content Section */}
             <div className="w-full md:w-1/2">
               <h2 className="font-bold text-[18px] sm:text-[20px] md:text-[24px] leading-[24px] sm:leading-[28px] md:leading-[32px] mb-4 sm:mb-6 md:mb-10">
-                Your custom heading text goes here. Replace this placeholder to
-                align with your content.
+                Renewed finance education
               </h2>
 
               <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-4 md:mb-6">
-                Replace with relevant text content. This could include
-                highlights of the features or benefits. Replace with relevant
-                text content. This could include highlights of the features or
-                benefits.
+                Here at Green Lighthouse, we believe that financial literacy is
+                the very foundation to a successful future.
               </p>
 
               <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-4 md:mb-6">
-                Add more information or supportive text that enhances your main
-                message. Add more information or supportive text that enhances
-                your main message.
+                Using our platform, kids learn financial and entrepreneurial
+                concepts in a gamified group class format.
               </p>
 
               <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-6 md:mb-10">
-                Continue to add compelling content that resonates with your
-                audience. Continue to add compelling content that resonates with
-                your audience.
+                We make learning about money fun and meaningful with interactive
+                lessons based on real-world situations.
               </p>
 
               {/* Link with Chevron */}
@@ -96,7 +90,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="w-full py-10 md:py-20 bg-coursebg bg-no-repeat bg-cover bg-top">
+      <section className="w-full py-10 md:py-20">
         <Container>
           {/* Section Header */}
           <div className="mb-8 md:mb-12">
@@ -105,11 +99,38 @@ const Home = () => {
             </h1>
           </div>
 
-          {/* Courses Cards */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-4 sm:gap-5">
-            {courses.map((course) => (
-              <Card {...course} key={course.id} />
-            ))}
+          <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+            {/* Heading Section */}
+            <div className="w-full h-[350px] md:w-1/2 mb-6 md:mb-0">
+              <img
+                src={courseimg}
+                alt="our courses"
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+
+            {/* Content Section */}
+            <div className="w-full md:w-1/2 ">
+              <p className="max-w-[100%] lg:max-w-[80%] font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-4 md:mb-6">
+                Check out our many course offerings for kids to help get them
+                prepared with the knowledge and skills needed in the financial
+                world. Our range of courses, from explaining the stock market to
+                moving into entrepreneurship are designed for various age groups
+                and levels of learning.
+              </p>
+
+              {/* Link with Chevron */}
+              <div className="flex items-center gap-1">
+                <Link
+                  to="/courses"
+                  aria-label="Learn more"
+                  className="relative font-bold text-[14px] sm:text-[16px] md:text-[18px] after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:border-b-2 after:border-alternate after:transition-all after:duration-300 hover:after:w-[40%]"
+                >
+                  Learn more
+                </Link>
+                <FaChevronRight aria-hidden="true" />
+              </div>
+            </div>
           </div>
         </Container>
       </section>
@@ -174,10 +195,13 @@ const Home = () => {
             </h1>
 
             {/* Description */}
+            <p className="font-bold text-[16px] sm:text-[20px] md:text-[24px] leading-[22px] sm:leading-[28px] md:leading-[32px] mb-2 sm:mb-6 md:mb-8 text-white">
+              Join the Green Lighthouse Community
+            </p>
             <p className="font-bold text-[16px] sm:text-[20px] md:text-[24px] leading-[22px] sm:leading-[28px] md:leading-[32px] mb-4 sm:mb-6 md:mb-8 text-white">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Obcaecati, nemo nobis placeat vitae iusto voluptas voluptatibus
-              deserunt voluptatem vel minima.
+              Empower your child with essential financial skills. Sign up for a
+              class with us today and move one step closer to that great
+              financial opportunity.
             </p>
 
             {/* CTA Button */}
@@ -186,7 +210,7 @@ const Home = () => {
               aria-label="Enroll for a course"
               className="bg-alternate text-white py-4 sm:py-5 px-6 sm:px-8 text-[16px] sm:text-[18px] hover:bg-hover hover:text-primary uppercase inline-block transition-all duration-300"
             >
-              Enroll for a course
+              Enroll now
             </Link>
           </div>
         </Container>

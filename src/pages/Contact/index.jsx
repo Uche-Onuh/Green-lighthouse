@@ -54,8 +54,8 @@ const Contact = () => {
       <Header
         title="Contact Us"
         bgImage="bg-contactbg"
-        paragraph={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rem
-          ipsa totam dolores! Sit maxime veniam cumque atque excepturi quia ab,`}
+        paragraph={`Questions or need additional information? We’re here to help! Get in touch to explore our programs and how they can set up your child with the knowledge of financial literacy that could change their life!
+`}
       />
 
       <section className="w-full py-24 md:py-32">
