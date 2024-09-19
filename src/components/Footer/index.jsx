@@ -56,7 +56,7 @@ const Footer = () => {
                     key={link.name}
                     className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] hover:text-secondary transition-colors"
                   >
-                    <Link to={link.to}>{link.name}</Link>
+                    <Link to={link.link}>{link.name}</Link>
                   </li>
                 ))}
               </ul>

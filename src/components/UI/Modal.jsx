@@ -1,7 +1,9 @@
 import React from "react";
 import { IoMdClose } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Modal = ({ onClose, course }) => {
+  const navigate = useNavigate();
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 transition-opacity duration-300">
       <div className="relative bg-white p-6 rounded-md shadow-md max-w-[90%] md:max-w-[50%] w-full max-h-[90vh] overflow-y-auto">
@@ -36,7 +38,12 @@ const Modal = ({ onClose, course }) => {
           ))}
         </ul>
         {/* Add more details as needed */}
-        <button className="bg-alternate text-white py-1 px-2 md:py-2 md:px-4 text-[12px] sm:text-[14px] md:text-[16px] hover:bg-hover hover:text-primary uppercase inline-block transition-colors duration-300">
+        <button
+          onClick={() => {
+            navigate(`/pay/${course.title}`);
+          }}
+          className="bg-alternate text-white py-1 px-2 md:py-2 md:px-4 text-[12px] sm:text-[14px] md:text-[16px] hover:bg-hover hover:text-primary uppercase inline-block transition-colors duration-300"
+        >
           Enroll
         </button>
       </div>

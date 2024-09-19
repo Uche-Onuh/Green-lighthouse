@@ -175,7 +175,7 @@ const Home = () => {
                       openIndex === i ? "max-h-[200px]" : "max-h-0"
                     }`}
                   >
-                    <div className="mt-3 text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] text-secondary">
+                    <div className="mt-3 text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] text-alternate">
                       <p className="font-medium">{faq.reply}</p>
                     </div>
                   </div>

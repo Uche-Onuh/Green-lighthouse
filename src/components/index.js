@@ -6,5 +6,16 @@ import Container from "./Container";
 import Card from "./UI/Card";
 import Header from "./UI/Header";
 import Modal from "./UI/Modal";
+import Plans from "./UI/Plans";
 
-export { Navbar, Footer, Layout, Helmet, Container, Card, Header, Modal };
+export {
+  Navbar,
+  Footer,
+  Layout,
+  Helmet,
+  Container,
+  Card,
+  Header,
+  Modal,
+  Plans,
+};

@@ -146,24 +146,24 @@ export const footerLinks = [
     title: "Navigation",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Home",
+        link: "/",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "About Us",
+        link: "/about-us",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
+        name: "Courses",
+        link: "/courses",
       },
       {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
+        name: "Contact Us",
+        link: "/contact",
       },
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Terms of Services",
+        link: "/tos",
       },
     ],
   },
@@ -172,23 +172,23 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        link: "#",
       },
       {
         name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        link: "#",
       },
       {
         name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        link: "#",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "#",
       },
       {
         name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        link: "#",
       },
     ],
   },
@@ -213,4 +213,25 @@ export const testimonial = [
     course: "Stock Market 101",
     location: "Boston, Massachusetts",
   },
+];
+
+export const plans = [
+  {
+    id: "basic",
+    title: "Basic",
+    price: 49,
+    perks: ["4 Pre-recorded videos"],
+  },
+  {
+    id: "classic",
+    title: "Classic",
+    price: 100,
+    perks: ["4 weeks duration", "1 class per week", "55 minutes per class"],
+  },
+  // {
+  //   id: "ultimate",
+  //   title: "Ultimate",
+  //   price: 150,
+  //   perks: ["4 weeks duration", "1 class per week", "55 minutes per class"],
+  // },
 ];
