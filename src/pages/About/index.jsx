@@ -40,11 +40,20 @@ const About = () => {
           </p>
           <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-4 md:mb-6">
             Our team comprises experienced educators and successful
-            entrepreneurs dedicated to sharing our knowledge with the next
-            generation. Our founder, Curtis Williams, is an experienced
-            entrepreneur and investor committed to teaching people how to make
-            smart financial decisions. His combination of real-world know-how
-            and educational expertise sets the tone for all our classes.
+            entrepreneurs dedicated to sharing their knowledge with the next
+            generation. Our founder, Curtis Williams, is a visionary
+            entrepreneur and seasoned investor who launched Green Lighthouse in
+            2024 with a mission to innovate and teach people how to make smart
+            financial decisions. With a proven track record of building
+            successful businesses and investing in high-growth ventures, he
+            combines strategic insight with hands-on leadership.
+          </p>
+          <p>
+            Curtis’s entrepreneurial drive and investment expertise have been
+            key in shaping Green Lighthouse’s success, ensuring it stays ahead
+            in an ever-evolving market while creating lasting value for
+            customers. His combination of real-world know-how and educational
+            expertise sets the tone for all our classes.
           </p>
         </div>
       </section>
@@ -58,13 +67,20 @@ const About = () => {
             <b>A Journey of Empowerment</b>
           </p>
           <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-4 md:mb-6">
-            Green Lighthouse was founded on the belief that every child deserves
-            a bright financial future. Our founder, Curtis Williams, began
-            investing in equities and real estate at a young age. Recognizing
-            the power of education and mentorship, he established Green
-            Lighthouse to empower young learners with his knowledge and
+            Green Lighthouse was founded in 2024 on the belief that every child
+            deserves a bright financial future. Our founder, Curtis Williams,
+            began investing in equities and real estate at a young age.
+            Recognizing the power of education and mentorship, he established
+            Green Lighthouse to empower young learners with his knowledge and
             experience. Over the years, we have become a reliable platform for
             educating kids on finance and equipping them with essential skills.
+          </p>
+          <p>
+            Curtis’s vision and dedication have driven Green Lighthouse to
+            continually innovate and adapt, ensuring we provide the most
+            relevant and impactful financial education. Our journey is marked by
+            a commitment to excellence and a passion for empowering the
+            next generation.
           </p>
         </div>
       </section>
