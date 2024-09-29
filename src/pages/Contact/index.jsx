@@ -22,24 +22,21 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // Log the form input data
-    console.log("Form Data:", form);
-
     try {
       // Uncomment this when ready to connect to the backend
-      // const response = await fetch("", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(form),
-      // });
+      const response = await fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
 
-      // if (!response.ok) {
-      //   throw new Error("Failed to send message.");
-      // }
+      if (!response.ok) {
+        throw new Error("Failed to send message.");
+      }
 
-      // const data = await response.json();
+      const data = await response.json();
       toast.success("Message sent successfully!");
       setForm({ firstName: "", email: "", lastName: "", message: "" });
     } catch (err) {
@@ -77,7 +74,7 @@ const Contact = () => {
                   to=""
                   className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] hover:text-secondary"
                 >
-                  333 Southeast 2nd Avenue - Suite 2000 - Miami, FL 33131
+                  P.O Box 5847, Naperville, IL 60567
                 </Link>
               </div>
               <div className="mb-6">
@@ -91,7 +88,7 @@ const Contact = () => {
                   to="mailto:hello@greenlighthouse.com"
                   className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] hover:text-secondary"
                 >
-                  hello@greenlighthouse.com
+                  hello@greenlighthouse.co
                 </Link>
               </div>
               <div className="mb-6">
@@ -99,13 +96,13 @@ const Contact = () => {
                   Call us
                 </p>
                 <p className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] mb-2 md:mb-2">
-                  Mon - Fri from 5am to 5pm
+                  Mon - Fri from 9:00am to 5:00pm CST
                 </p>
                 <Link
-                  to="tel:"
+                  to="tel:1-630-923-1323"
                   className="font-normal text-[14px] sm:text-[16px] md:text-[18px] leading-[20px] sm:leading-[22px] md:leading-[24px] hover:text-secondary"
                 >
-                  1-855-498-4400
+                  1-630-923-1323
                 </Link>
               </div>
               <div className="mb-6">

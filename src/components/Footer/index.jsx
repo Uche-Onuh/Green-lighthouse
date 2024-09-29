@@ -14,17 +14,16 @@ const Footer = () => {
             Contact
           </h2>
           <p className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] mb-2">
-            333 Southeast 2nd Avenue - Suite 2000 - Miami, FL 33131
+            P.O Box 5847, Naperville, IL 60567
           </p>
           <p className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] mb-2">
-            Phone: 1-855-498-4400
+            Phone: 1-630-923-1323
           </p>
           <p className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] mb-2">
-            Email: pd@teachnkidslearn.com
+            Email: hello@greenlighthouse.co
           </p>
           <p className="font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] mb-4">
-            Hours: 8:30 am – 5:30 pm, Monday – Friday (limited support evenings,
-            weekends, and holidays)
+            Hours: 9:00 am – 5:00 pm CST, Monday – Friday
           </p>
 
           {/* Social Media Icons */}

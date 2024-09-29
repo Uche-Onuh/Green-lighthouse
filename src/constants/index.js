@@ -225,7 +225,7 @@ export const plans = [
   {
     id: "classic",
     title: "Classic",
-    price: 100,
+    price: 99.99,
     perks: ["4 weeks duration", "1 class per week", "55 minutes per class"],
   },
   // {
