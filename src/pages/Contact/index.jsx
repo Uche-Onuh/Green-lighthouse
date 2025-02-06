@@ -24,7 +24,7 @@ const Contact = () => {
 
     try {
       // Uncomment this when ready to connect to the backend
-      const response = await fetch("http://localhost:3000/send-email", {
+      const response = await fetch("https://greenlighthouse.co/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
