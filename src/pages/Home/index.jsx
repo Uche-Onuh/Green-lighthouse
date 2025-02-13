@@ -77,7 +77,7 @@ const Home = () => {
               {/* Link with Chevron */}
               <div className="flex items-center gap-1">
                 <Link
-                  to="/about"
+                  to="/about-us"
                   aria-label="Learn more"
                   className="relative font-bold text-[14px] sm:text-[16px] md:text-[18px] after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:border-b-2 after:border-alternate after:transition-all after:duration-300 hover:after:w-[40%]"
                 >
