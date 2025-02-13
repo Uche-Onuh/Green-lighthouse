@@ -221,12 +221,14 @@ export const plans = [
     title: "Basic",
     price: 49,
     perks: ["4 Pre-recorded videos"],
+    active: false,
   },
   {
     id: "classic",
     title: "Classic",
     price: 99.99,
-    perks: ["4 weeks duration", "1 class per week", "55 minutes per class"],
+    perks: ["2 weeks duration", "2 class per week", "55 minutes per class"],
+    active: true,
   },
   // {
   //   id: "ultimate",

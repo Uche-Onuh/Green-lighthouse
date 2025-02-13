@@ -29,7 +29,7 @@ const Home = () => {
 
               {/* Button */}
               <Link
-                to=""
+                to="/courses"
                 aria-label="View our course catalogue"
                 className="bg-alternate text-white py-3 px-6 md:py-5 md:px-8 text-[14px] sm:text-[16px] md:text-[18px] hover:bg-hover hover:text-primary uppercase inline-block transition-colors duration-300"
               >
@@ -206,7 +206,7 @@ const Home = () => {
 
             {/* CTA Button */}
             <Link
-              to=""
+              to="/courses"
               aria-label="Enroll for a course"
               className="bg-alternate text-white py-4 sm:py-5 px-6 sm:px-8 text-[16px] sm:text-[18px] hover:bg-hover hover:text-primary uppercase inline-block transition-all duration-300"
             >

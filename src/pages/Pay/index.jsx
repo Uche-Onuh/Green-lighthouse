@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet, Container, Header, Plans } from "../../components";
-import { useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { plans } from "../../constants";
 
 const Pay = () => {
@@ -16,9 +16,8 @@ const Pay = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Uncomment this when ready to connect to the backend
       const response = await fetch(
-        "http://localhost:3000/create-checkout-session",
+        "https://greenlighthouse.co/create-checkout-session",
         {
           method: "POST",
           headers: {
@@ -42,7 +41,9 @@ const Pay = () => {
 
       const data = await response.json();
       console.log(data);
-      window.location = data.url; // Redirect to Stripe checkout page
+      setTimeout(() => {
+        window.location = data.url; // Small delay to allow mobile browsers to process the event
+      }, 100); // Redirect to Stripe checkout page
     } catch (err) {
       console.log(err);
     }
@@ -75,6 +76,8 @@ const Pay = () => {
 
             <div className="flex justify-end">
               <button
+                onTouchStart={handleSubmit} // Handles mobile taps
+                onClick={handleSubmit} // Handles desktop clicks
                 type="submit"
                 className="bg-alternate text-white py-3 px-6 md:py-5 md:px-8 text-[14px] sm:text-[16px] md:text-[18px] hover:bg-hover hover:text-primary uppercase inline-block transition-colors duration-300"
               >

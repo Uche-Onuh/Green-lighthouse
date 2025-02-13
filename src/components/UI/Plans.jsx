@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
-const Plans = ({ title, perks, price, selected }) => {
+const Plans = ({ title, perks, price, selected, active }) => {
   const formattedPrice = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -25,9 +25,16 @@ const Plans = ({ title, perks, price, selected }) => {
         ))}
       </ul>
 
-      <h3 className="absolute bottom-5 right-5 font-bold text-[40px] leading-[30px] text-white">
-        {formattedPrice}
-      </h3>
+      <div className="flex items-center justify-between">
+        <h3>
+          <span className="font-bold text-[18px] text-white absolute bottom-5">
+            {active ? "" : "Coming Soon"}
+          </span>
+        </h3>
+        <h3 className="absolute bottom-5 right-5 font-bold text-[40px] leading-[30px] text-white">
+          {formattedPrice}
+        </h3>
+      </div>
     </div>
   );
 };
